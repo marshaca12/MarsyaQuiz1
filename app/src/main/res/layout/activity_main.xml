@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Judul Toko -->
+    <TextView
+        android:id="@+id/tvJudulToko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOKO HP Marsha Cahyani Dwisyakilla Quiz 1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Alamat Toko -->
+    <TextView
+        android:id="@+id/tvAlamatToko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jalan Taman Karya"
+        android:textSize="16sp"
+        android:layout_below="@id/tvJudulToko"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Nama Pelanggan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pelanggan:"
+        android:textSize="16dp"
+        android:layout_below="@id/tvAlamatToko"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/etNamaPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama pelanggan"
+        android:layout_below="@id/tvAlamatToko"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Tipe Pelanggan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipe Pelanggan:"
+        android:textSize="16sp"
+        android:layout_below="@id/etNamaPelanggan"
+        android:layout_marginTop="0dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgTipePelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNamaPelanggan"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/rbSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/rbBiasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biasa"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <!-- Kode Barang -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode Barang:"
+        android:textSize="16sp"
+        android:layout_below="@id/rgTipePelanggan"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/etKodeBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan kode barang"
+        android:layout_below="@id/rgTipePelanggan"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Jumlah Barang -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Barang:"
+        android:textSize="16sp"
+        android:layout_below="@id/etKodeBarang"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/etJumlahBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan jumlah barang"
+        android:inputType="number"
+        android:layout_below="@id/etKodeBarang"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Tombol Proses -->
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proses"
+        android:layout_below="@id/etJumlahBarang"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>
+
